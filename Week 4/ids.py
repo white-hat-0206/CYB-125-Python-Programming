@@ -1,7 +1,7 @@
+import sys
 # mySploit Intrusion Detection Module
 # Complete Phase 2. Data Processing
-# You do not need to modify any code in Phase 1 or Phase 2.
-
+# You do not need to modify any code in Phase 1 or Phase 2
 print("""
 ----------------------------------------------------
              INTRUSION DETECTION MODULE
@@ -57,7 +57,7 @@ and failed to login:""")
 
     if username == "":
         sys.exit(1)  # invalid username
-    else:
+    else: # if username is valid:
         username = username.strip().lower()
 
     str_attempts = input("\nEnter the number of failed login attempts observed:\n>>> ").strip()
@@ -69,6 +69,7 @@ and failed to login:""")
 
     # PHASE 2. DATA PROCESSING - Write your if / elif / else statements here.
     # Check to see if the user is privileged (admin or root)
+    
     # Check for internal access by a standard user
     # Check for internal access by a privileged user
     # Check for external access by a standard user
